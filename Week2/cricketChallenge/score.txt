@@ -1,0 +1,13 @@
+player 0's score is 14
+player 1's score is 24
+player 2's score is 17
+player 3's score is 0
+player 4's score is 69
+player 5's score is 81
+player 6's score is -
+player 7's score is -
+player 8's score is 22
+player 9's score is 0
+player 10's score is 1
+Total: 228
+total divided by 2: 114

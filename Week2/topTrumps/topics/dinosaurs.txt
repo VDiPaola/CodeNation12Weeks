@@ -1,0 +1,157 @@
+
+{
+"Archaeopteryx": {
+
+    "Height": 0.3,
+    "Weight": 6,
+    "Lenght": 0.3,
+    "KillerRating": 6,
+    "Intelligence": 5,
+    "Age": 150
+
+},
+
+"Barosaurus":{
+
+    "Height": 26,
+    "Weight": "40,000",
+    "Lenght": 26,
+    "KillerRating": 3,
+    "Intelligence": 2,
+    "Age": 156
+
+},
+
+"Brachiosaurus":{
+
+    "Height": 16,
+    "Weight": "80,000",
+    "Lenght": 26,
+    "KillerRating": 3,
+    "Intelligence": 2,
+    "Age": 156
+
+},
+"Camarasaurus":{
+
+    "Height": 9,
+    "Weight": "20,000",
+    "Lenght": 19,
+    "KillerRating": 3,
+    "Intelligence": 2,
+    "Age": 150
+
+},
+
+"Maiasaura":{
+
+    "Height": 2.5,
+    "Weight": "3,000",
+    "Lenght": 9,
+    "KillerRating": 2,
+    "Intelligence": 3,
+    "Age": 80
+
+},
+
+"Megalosaurus":{
+
+    "Height": 3,
+    "Weight": "1,000",
+    "Lenght": 9,
+    "KillerRating": 9,
+    "Intelligence": 8,
+    "Age":175
+
+},
+
+"Oriraptor":{
+
+    "Height": 0.8,
+    "Weight": 20,
+    "Lenght": 1.8,
+    "KillerRating": 5,
+    "Intelligence": 8,
+    "Age": 70
+
+},
+
+"Pachycephalosaurus":{
+
+    "Height": 6,
+    "Weight": "3,000",
+    "Lenght": 8,
+    "KillerRating": 2,
+    "Intelligence": 7,
+    "Age": 76
+
+},
+
+
+"Ceatrosaurus":{
+
+    "Height": 2,
+    "Weight": "1,000",
+    "Lenght": 6,
+    "KillerRating": 2,
+    "Intelligence": 4,
+    "Age": 76
+
+},
+
+"Coelephysis":{
+
+    "Height": 2,
+    "Weight": 27,
+    "Lenght": 3,
+    "KillerRating": 4,
+    "Intelligence": 7,
+    "Age": 225
+
+},
+
+"Compsegnathus":{
+
+    "Height": 0.7,
+    "Weight": 3,
+    "Lenght": 1.4,
+    "KillerRating": 5,
+    "Intelligence": 7,
+    "Age": 145
+
+},
+
+"Corythosaurus":{
+
+    "Height": 5,
+    "Weight": "5,000",
+    "Lenght": 8,
+    "KillerRating": 2,
+    "Intelligence": 5,
+    "Age": 80
+
+},
+
+"Pachyrhinosaurus":{
+
+    "Height": 3,
+    "Weight": "3,630",
+    "Lenght": 7,
+    "KillerRating": 2,
+    "Intelligence": 4,
+    "Age": 70
+
+},
+
+"Tyrannosaurus Rex":{
+
+    "Height": 5.6,
+    "Weight": "6,000",
+    "Lenght": 13,
+    "KillerRating": 9,
+    "Intelligence": 9,
+    "Age": 67
+
+}
+
+}

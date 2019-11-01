@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.container{
+    width:100vw;
+    height: 100vh;
+    display: block;
+    font-size: 10vw;
+}
+
+.box{
+    background-color: aqua;
+    height: 33%;
+    width: 33%;
+    display: block;
+    float:left;
+}
+.box:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+p{
+    position: relative;
+    top:20%;
+}
+
+#button{
+    position: relative;
+    width: 25%;
+    height: 20%;
+    background-color: rgb(192, 192, 192);
+    border-radius: 5px;
+    left:40%;
+}
+#button:hover{
+    background-color: rgb(119, 119, 119);
+    cursor: pointer;
+}
+
+body{
+    background-color: lightcoral;
+}
