@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    overflow: hidden;
+    background-color: white;
+}
+#page{
+    color:rgb(0, 0, 0);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    top:0vh;
+
+    animation-name: pagedown;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+    font-family: 'Cinzel', serif;
+    text-align: center;
+
+    cursor: default;
+}
+#page h1{
+    animation-name: textfade;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+    font-size: 5vh;
+    
+    transition: font-size .5s;
+}
+@keyframes textfade{
+    0%{}
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+@keyframes pagedown{
+    100%{
+        top: 10vh;
+    }
+}
+#page h1:hover{
+    font-size: 6vh;
+}
+#img1{
+    width: 10vw;
+    height: auto;
+    transition: transform 1s;
+    float: left;
+    position: relative;
+    left: 10vw;
+    top: 15vh;
+}
+#img1:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+#img2{
+    width: 10vw;
+    height: auto;
+    transition: top 1s;
+    float: right;
+    position: relative;
+    left: -10vw;
+    top: 15vh;
+    background-color: rgb(41, 92, 201);
+    border-radius: 5%;
+}
+#img2:hover{
+    top: 13vh;
+    cursor: pointer;
+}
+#links ul{
+    list-style-type: none;
+    font-size: 6vh;
+}
+#img1, #img2{
+    animation-name: imgfade;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes imgfade{
+    100%{
+        opacity: 1;
+    }
+}
+#links ul li{
+    color: rgba(255, 255, 255, 0);
+    animation-name: listfade;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    float: left;
+}
+#links{
+    position: relative;
+    top:9vh;
+    width: 50vw;
+    height: 30vh;
+    left: 20vw;
+}
+#links ul li:nth-child(1){
+    animation-delay: 3s;
+}
+#links ul li:nth-child(2){
+    animation-delay: 4s;
+}
+#links ul li:nth-child(3){
+    animation-delay: 5s;
+}
+#links ul li:nth-child(4){
+    animation-delay: 6s;
+}
+
+@keyframes listfade{
+    100%{
+        color: white;
+    }
+}

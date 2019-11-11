@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+h2 {
+    background: url(../img/zen.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header h1{
+    font-family: 'roboto';
+    font-weight: normal;
+    color: white;
+    text-shadow: 3px 4px 2px #000000;
+    font-size: 5vh;
+    position: relative;
+    width:30%;
+    top: 35%;
+    left:35%;
+}
+header h2{
+    font-family: 'Satisfy';
+    color: rgb(201, 201, 201);
+    font-size: 3vh;
+    position: relative;
+    width: 25%;
+    top:40%;
+    left:40%;
+
+}
+header{
+    text-align: center;
+    background-color: blue;
+    background: URL("../img/huntington.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    display: block;
+    z-index: 0;
+}
+
+body{
+    background-color: white;
+}
+
+#zen-summary, #zen-preamble, #zen-supporting, .sidebar{
+    position: relative;
+    top: 35vh;
+    font-family: "IBM Plex Mono";
+}
+
+#zen-summary, #zen-preamble, footer, .sidebar{
+    margin-bottom: 2%;
+}
+
+#zen-summary, #zen-preamble, #zen-explanation,#zen-requirements h3, #zen-requirements p:not(:last-child){
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+}
+.participation, .benefits{
+    background-color: rgba(138,188,159,0.5);
+    padding-left: 10%;
+    padding-right: 10%;
+    color:white;
+    background-image: url(../img/bamboo.png)
+}
+
+[role="contentinfo"]{
+    background-color: rgb(138,188,159);
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    margin-top:4%;
+}
+
+.participation a, .intro a, .requirements a{
+    color: rgb(97, 97, 97);
+}
+
+h3{
+    color:rgb(26, 26, 26);
+}
+
+.intro, .explanation, .requirements{
+    color: gray;
+}
+[role="contentinfo"] a{
+    color: white;
+    font-size:4vh;
+    font-family: 'satisfy'
+}
+
+[role="contentinfo"] a:hover{
+    text-decoration: underline;
+}
+.summary{
+    padding-top: 2%;
+}
+
+.requirements{
+    padding-top: 3%;
+    
+}
+
+#zen-requirements p:not(:last-child){
+    margin-top: 2%;
+}
+.benefits{
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.participation{
+    padding-top: 1%;
+}
+
+footer{
+    background-color: #134347;
+    position: absolute;
+    width: 100vw;
+    height: 5%;
+    display: block;
+}
+footer a{
+    position: relative;
+    height: 100%;
+    font-size: 4vh;
+    color:white;
+    left:30%;
+    margin-right: 5%;
+    top:25%;
+}
+footer a:hover{
+    color: gray;
+}
+
+
+.sidebar{
+    padding-top: 2%;
+    display: block;
+    bottom:0;
+    background-color: #cfdbd3;
+    height: 75vh;
+    top:43vh;
+}
+
+.design-name{
+    color:black;
+}
+
+.design-selection{
+    position: relative;
+    width: 100vw;
+    left: 0;
+    
+}
+
+.design-selection li, .design-archives li{
+    list-style-type: none;
+    position: relative;
+    width: 50%;
+    padding-top: 4%;
+    padding-left: 15%;
+    padding-bottom: 4%;
+    font-size: 1.5vh;
+}
+.design-selection li{
+    border-bottom: 1px solid darkgray;
+}
+.design-selection ul{
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    
+}
+
+.design-selection li:nth-child(2), .design-selection li:nth-child(4),.design-selection li:nth-child(6),.design-selection li:nth-child(8){
+    float: right;
+}
+.design-selection li:nth-child(1), .design-selection li:nth-child(3),.design-selection li:nth-child(5),.design-selection li:nth-child(7){
+    float: left;
+}
+
+.designer-name, .design-archives a{
+    color:gray;
+}
+
+.select{
+    display: none;
+}
+
+.design-archives h3{
+    display: none;
+}
+.design-archives li:first-child{
+    float: left;
+}
+.design-archives li:last-child{
+    float: right;
+}
+.design-archives li{
+    list-style-type: none;
+}
+
+.zen-resources{
+    background-color: rgba(138,188,159,0.5);
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top:75vh;
+    background-image: url("../img/bamboo.png")
+}
+.zen-resources h3{
+    display: none;
+}
+
+.zen-resources a{
+    color: rgb(110, 110, 110);
+}
+
+.zen-resources li{
+    list-style-type: none;
+    position: relative;
+    width: 50%;
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-bottom: 1%;
+    font-size: 1.5vh;
+    
+}
+
+.zen-resources li:nth-child(4), .zen-resources li:nth-child(5){
+    float: right;
+    padding-right: 5%;
+}
+.zen-resources li:nth-child(1), .zen-resources li:nth-child(2), .zen-resources li:nth-child(3){
+    float: left;
+}

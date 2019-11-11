@@ -1,0 +1,12 @@
+#start {
+  width: 600px;
+  height: 100px;
+  background-color: black;
+  color: whitesmoke;
+}
+#roll {
+  width: 400px;
+  height: 100px;
+  background-color: red;
+  color: blue;
+}

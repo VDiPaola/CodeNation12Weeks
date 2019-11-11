@@ -1,0 +1,67 @@
+img{
+    width:100px;
+    height:100px;
+    border-radius: 10%;
+    animation-name: cat;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    position: absolute;
+    left:45%;
+    top:40vh;
+    transition: border-radius .5s, width .5s, height .5s;
+}
+
+img:hover{
+    border-radius: 100%;
+    width: 200px;
+    height:200px;
+}
+
+
+@keyframes cat{
+    0%{
+        background-color: aqua;
+        transform: rotate(0deg);
+    }
+    50%{
+        background-color: rgb(255, 94, 0);
+        transform: rotate(180deg);
+    }
+    100%{
+        background-color: aqua;
+        transform: rotate(360deg)
+    }
+}
+h1{
+    width:30vh;
+    height:50vh;
+    position: absolute;
+    left:40%;
+    top:10%;
+    text-align: center;
+    color:green;
+    animation-name: name;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+
+}
+h1:hover:after{
+    content: "CAT";
+}
+
+@keyframes name{
+    0%{
+        color:green;
+        transform: rotate(0deg);
+    }
+    50%{
+        color:red;
+        transform: rotate(180deg);
+    }
+    100%{
+        color:green;
+        transform: rotate(360deg);
+    }
+
+}
