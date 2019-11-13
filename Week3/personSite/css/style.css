@@ -76,10 +76,6 @@ body{
     top: 13vh;
     cursor: pointer;
 }
-#links ul{
-    list-style-type: none;
-    font-size: 6vh;
-}
 #img1, #img2{
     animation-name: imgfade;
     animation-duration: 4s;
@@ -92,35 +88,28 @@ body{
         opacity: 1;
     }
 }
-#links ul li{
-    color: rgba(255, 255, 255, 0);
-    animation-name: listfade;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    float: left;
-}
 #links{
+    display: flex;
     position: relative;
-    top:9vh;
-    width: 50vw;
-    height: 30vh;
-    left: 20vw;
+    top: 5%;
+    width: 30%;
+    height: 35%;
+    left: 25%;
+    flex-direction: column;
 }
-#links ul li:nth-child(1){
-    animation-delay: 3s;
-}
-#links ul li:nth-child(2){
-    animation-delay: 4s;
-}
-#links ul li:nth-child(3){
-    animation-delay: 5s;
-}
-#links ul li:nth-child(4){
-    animation-delay: 6s;
+#links div{
+    display: block;
+    position: relative;
+    width: auto;
+    height: 20%;
+    font-size: 4vh;
+    font-family: 'Sail', cursive;
+    margin-bottom: 10%;
+    transition: border 1s, color 2s;
+    color: rgb(0, 0, 0);
 }
 
-@keyframes listfade{
-    100%{
-        color: white;
-    }
+
+#links div:hover{
+    cursor: pointer;
 }

@@ -1,0 +1,105 @@
+body{
+    overflow-x: hidden;
+}
+#basketContainer{
+position: relative;
+width: 90%;
+padding-left: 10%;
+min-height:500px;
+overflow-y: scroll;
+
+}
+#pageWrap{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+#basketContainer h1{
+    text-align: center;
+    font-size: 3.5vw;
+    color: rgb(122, 122, 122);
+    
+}
+body{
+    background-color: rgb(245, 245, 248);
+}
+
+.itemDiv{
+    position:relative;
+    width:20%;
+    background-color:lavender;
+    height:35%;
+    float: left;
+    font-size: 3vh;
+    margin-top: 1%;
+    display: block;
+    margin-left: .5%;
+    margin-right: .5%;
+    text-align: center;
+
+}
+.itemImage{
+    position: absolute;
+    width:80%;
+    height:50%;
+    top:40%;
+    left:10%;
+}
+.itemRemove{
+    background-image: url(../img/deletebutton.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width:10%;
+    height: 10%;
+    top:2%;
+    left: 90%;
+    font-size: 3vw;
+}
+.itemAmountText{
+    font-size: 2vw
+}
+.itemRemove:hover{
+    cursor: pointer;
+}
+.itemTitle{
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 549px) {
+    .itemTitle{
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .itemDiv{
+        height: 50%;
+        width: 31%;
+    }
+    #basketContainer h1{
+        font-size: 5vw;
+    }
+    .itemAmountText{
+        font-size: 3vw
+    }
+    .itemRemove{
+        top:30%;
+        left: 40%;
+    }
+    #basketContainer{
+        padding-left:5%;
+        width:95%;
+    }
+}
+
+@media only screen and (max-width: 439px) {
+    .itemRemove{
+        width:20%;
+        height: 20%;
+    }
+    .itemTitle{
+        font-size: 5vw;
+    }
+}
