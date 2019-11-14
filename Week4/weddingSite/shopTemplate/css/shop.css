@@ -1,0 +1,41 @@
+.itemDiv{
+    position:relative;
+    width:25%;
+    background-color:blue;
+    height:50%;
+    text-align: center;
+    font-size: 2vw;
+    float: left;
+}
+.itemImage{
+    position:absolute;
+    width:50%;
+    height:50%;
+    top:45%;
+    left:20%;
+}
+#itemContainer{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+.itemAmountText{
+    position: absolute;
+    width: 50%;
+    font-size: 2vw;
+    top:17%;
+    left:0;
+}
+.itemAmount, .itemAdd{
+    position: absolute;
+}
+.itemAmount{
+    left: 50%;
+    top:20%;
+    width: 10%;
+}
+.itemAdd{
+    left:65%;
+    top:20%;
+    width:25%;
+}
