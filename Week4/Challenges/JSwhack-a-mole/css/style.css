@@ -1,0 +1,54 @@
+.game{
+    width:100%;
+    height: 50%;
+    position: absolute;
+}
+body{
+    text-align: center;
+    background-color: rgb(250, 229, 233);
+}
+#start{
+    padding: .8% 5% .8% 5%;
+}
+#leaderboardButton{
+    padding: .8% 3% .8% 3%;
+}
+#leaderboard{
+    display: none;
+}
+.field{
+    background-image: url("../img/field.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 33.33333%;
+    height: 50%;
+    float:left;
+    position: relative;
+    z-index: 1;
+}
+.mrbump{
+    background-image: url("../img/mrbump.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width:50%;
+    height: 50%;
+    left:30%;
+    top:20%;
+    position: absolute;
+    z-index: -1;
+    display: none;
+}
+.mrbump:hover{
+    cursor: pointer;
+}
+.score{
+    color: rgb(255, 0, 0);
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: lightblue;
+    border-radius: 50%;
+    font-family: Arial, Helvetica, sans-serif
+}
+h1,h2{
+    font-family: fantasy
+}
