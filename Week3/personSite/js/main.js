@@ -5,57 +5,75 @@ document.getElementById("img1").addEventListener("click", function(){
 
 let buttons = document.getElementById("links").children;
 
-for(var i=0;i<buttons.length;i++){
-    buttons[i].dataset.hovering="false";
-    buttons[i].addEventListener("mouseover", hover);
-    buttons[i].addEventListener("mouseout", hoverOff);
+for(i=0;i<buttons.length;i++){
+    textColour(i);
 
+}
+
+//function to change text colour
+let colours = ["#F9B3D1", "#89259F", "#ED254E","#87CBAC","white"]
+function textColour(i){
     setTimeout(() => {
-        buttons[i].style.color = "red";
+        buttons[i].style.color = "#8a8a8a";
     }, i * 500 + 2000);
 }
 
-
-
-let seconds = 1;
-let border = "1px solid white";
-let currSide = "";
-//when hover on run animation
-async function hover(e){
-    e.target.hovering = "true";
-    while(e.target.hovering == "true"){
-        if(currSide == "top"){
-            e.target.style.borderRight = border;
-            currSide = "right";
-        }else if(currSide == "right"){
-            e.target.style.borderBottom = border;
-            currSide = "bottom";
-        }else if(currSide == "bottom"){
-            e.target.style.borderLeft = border;
-            currSide = "left";
-        }else if(currSide == "left"){
-            e.target.style.borderTop = border;
-            currSide = "top";
-        }else{
-            e.target.style.borderTop = border;
-            currSide = "top";
+let hovered = false;
+document.getElementById("name").addEventListener("mouseover", function(){
+    hovered = true;
+    document.getElementById("underline").style.width = "30%";
+    document.getElementById("underline").style.left = "35%";
+})
+document.getElementById("name").addEventListener("mouseout", function(){
+    hovered = false;
+    document.getElementById("underline").style.width = "0%";
+    document.getElementById("underline").style.left = "100%";
+    setTimeout(() => {
+        if(!hovered){
+            document.getElementById("underline").style.left = "0%";
         }
-        
-        await timer(seconds);
-        e.target.style.border = "none";
-    }
-}
-//when you hover off a link changes variable
-function hoverOff(e){
-    e.target.hovering = "false";
-    e.target.style.border = "none";
-}
+    }, 400);
+})
 
-//waits x amount of seconds before carrying on the async function
-function timer(seconds){
-    return new Promise((resolve, reject)=>{
-        setTimeout(function(){
-            resolve();
-        }, seconds * 1000);
-    });
-}
+//when hover on run animation
+// async function hover(e){
+//     let seconds = 1;
+//     let border = "1px solid white";
+//     let currSide = "";
+//     e.target.hovering = "true";
+//     while(e.target.hovering == "true"){
+//         if(currSide == "top"){
+//             e.target.style.borderRight = border;
+//             currSide = "right";
+//         }else if(currSide == "right"){
+//             e.target.style.borderBottom = border;
+//             currSide = "bottom";
+//         }else if(currSide == "bottom"){
+//             e.target.style.borderLeft = border;
+//             currSide = "left";
+//         }else if(currSide == "left"){
+//             e.target.style.borderTop = border;
+//             currSide = "top";
+//         }else{
+//             e.target.style.borderTop = border;
+//             currSide = "top";
+//         }
+        
+//         await timer(seconds);
+//         e.target.style.border = "none";
+//     }
+// }
+// //when you hover off a link changes variable
+// function hoverOff(e){
+//     e.target.hovering = "false";
+//     e.target.style.border = "none";
+// }
+
+// //waits x amount of seconds before carrying on the async function
+// function timer(seconds){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(function(){
+//             resolve();
+//         }, seconds * 1000);
+//     });
+// }

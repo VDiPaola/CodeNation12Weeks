@@ -1,0 +1,59 @@
+*{
+  padding:0;
+  margin:0;
+}
+.App{
+  width:100vw;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.topics{
+  width:85%;
+  height:30%;
+  position: relative;
+  left:7%;
+}
+.topics:nth-child(1){
+  margin-bottom: 5%;
+}
+img{
+  height: 60%;
+  width:90%;
+}
+.story{
+  display: block;
+  position: relative;
+  width:20%;
+  height:100%;
+  float:left;
+  top:15%;
+}
+#topicName{
+  left:0;
+  top:0;
+  position: absolute;
+}
+#topicAll{
+  right:0;
+  top:0;
+  position: absolute;
+  font-size: 1.3vw;
+}
+#topicAll:hover{
+  cursor: pointer;
+}
+#line{
+  font-size: 1.5vw;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  left:3%;
+}
+.story:hover{
+  cursor: pointer;
+}
+.text{
+  font-size: 1.5vw;
+  width: 90%;
+}

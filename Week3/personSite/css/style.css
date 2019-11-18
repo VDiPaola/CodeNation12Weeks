@@ -32,7 +32,11 @@ body{
 
     font-size: 5vh;
     
-    transition: font-size .5s;
+    transition: border-bottom .5s;
+
+    width: 50%;
+    position: relative;
+    left: 25%;
 }
 @keyframes textfade{
     0%{}
@@ -45,8 +49,12 @@ body{
         top: 10vh;
     }
 }
-#page h1:hover{
-    font-size: 6vh;
+#underline{
+    border-bottom: 1px solid red;
+    width:0%;
+    transition: .5s;
+    position: relative;
+    left:0%;
 }
 #img1{
     width: 10vw;
@@ -112,4 +120,6 @@ body{
 
 #links div:hover{
     cursor: pointer;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
