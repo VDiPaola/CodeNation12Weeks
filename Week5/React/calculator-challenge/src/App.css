@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  height: 100%;
+}
+.App{
+  width: 90vw;
+  height: 100vh;
+  left:5%;
+  position: absolute;
+  background-color: rgb(231, 231, 231);
+}
+.outputContainer{
+  min-width: 100%;
+  height: 20%;
+  position: relative;
+  background-color: rgb(210, 210, 214);
+}
+#output{
+  overflow-x: scroll;
+  font-size: 15vh;
+  position: absolute;
+  text-align: right;
+  left:0;
+  height: 100%;
+  width: 85%;
+}
+#backButton{
+  width: 10%;
+  height: 100%;
+  right:0;
+  position: absolute;
+  background-image: url("back.png");
+  background-size: 100% 100%;
+
+}
+#backButton:hover{
+  cursor: pointer;
+}
+.simpleCalc{
+  width: 100%;
+  height: 30%;
+  background-color: rgb(150, 150, 150);
+  text-align: center;
+}
+.simpleCalc input{
+  width: 40%;
+  height: 40%;
+  text-align: center
+}
+.choice{
+  width: 45%;
+  height: 40%;
+  background-color: aliceblue;
+}
+.choice:nth-child(2){
+  float: right;
+}
+.choice:hover{
+  cursor: pointer;
+  background-color: rgb(212, 206, 206);
+}
+.calc{
+  width: 100%;
+  height: 100%;
+}
+.buttons{
+  background-color: rgb(175, 119, 119);
+  width: 100%;
+  height: 100%;
+}
+.buttons p{
+  width: 24.75%;
+  height: 10%;
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  float: left;
+  border: .1vw solid black;
+}
+.buttons p:hover{
+  cursor: pointer;
+  background-color: rgb(177, 176, 176);
+}
+.buttons p:nth-child(5), .buttons p:nth-child(6), .buttons p:nth-child(7){
+  background-color: lightblue;
+}
+.buttons p:nth-child(5):hover, .buttons p:nth-child(6):hover, .buttons p:nth-child(7):hover{
+  background-color: rgb(83, 183, 216);
+}
+.buttons p:nth-child(9), .buttons p:nth-child(10), .buttons p:nth-child(11){
+  background-color: lightblue;
+}
+.buttons p:nth-child(9):hover, .buttons p:nth-child(10):hover, .buttons p:nth-child(11):hover{
+  background-color: rgb(83, 183, 216);
+}
+.buttons p:nth-child(13), .buttons p:nth-child(14), .buttons p:nth-child(15){
+  background-color: lightblue;
+}
+.buttons p:nth-child(13):hover, .buttons p:nth-child(14):hover, .buttons p:nth-child(15):hover{
+  background-color: rgb(83, 183, 216);
+}
+.buttons p:nth-child(17), .buttons p:nth-child(18){
+  background-color: lightblue;
+}
+.buttons p:nth-child(17):hover, .buttons p:nth-child(18):hover{
+  background-color: rgb(83, 183, 216);
+}
+.buttons p:nth-child(19){
+  background-color: rgb(81, 236, 88);
+}
+.buttons p:nth-child(19):hover{
+  background-color: rgb(60, 167, 39);
+}
