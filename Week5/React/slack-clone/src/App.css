@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+}
+.mainWrapper, body, html{
+  width:100vw;
+  height: 100%;
+}
+body{
+  overflow: hidden;
+}
+.sidebar{
+  background-color: #3F0E40;
+  position: absolute;
+  width:15%;
+  height:100%;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+}
+#sideProfile{
+  position: relative;
+  width: 100%;
+  height: 30%;
+
+}
+#sideTop{
+  padding-bottom: 20%;
+}
+#sideProfile h1{
+  font-size: 2vw;
+}
+#sideProfile:hover{
+  cursor: pointer;
+
+}
+#sideProfile p{
+  color:rgb(202, 200, 200);
+  font-size: 1.5vw;
+  position: relative;
+  left:10%;
+}
+#online{
+  border-radius:50%;
+  width:6%;
+  padding-top: 6%;
+  top:71%;
+  background-color: green;
+  position: absolute;
+}
+#sideProfile h1 span{
+  font-size: 1vw;
+  position: absolute;
+  left:70%;
+  top:15%;
+  color:rgb(202, 200, 200);
+}
+.fa{
+  width:10%;
+  height: 100%;
+  position: absolute;
+  right:3%;
+  top:10%;
+  color: rgb(202, 200, 200);
+}
+.fa:hover{
+  color: white;
+}
+#sideImage{
+  background-image: url('https://www.freeiconspng.com/uploads/church-bell-icon-5.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right:0;
+  top:0;
+  width: 10%;
+  height: 100%;
+}
+#channels{
+  font-size: 1.5vw;
+  color: rgb(207,195,207);
+
+}
+#channels:hover{
+  color: white;
+  cursor: pointer;
+}
+#sideBottom{
+  width: 100%;
+  max-height: 70%;
+  position: relative;
+  overflow-y: scroll;
+  background:transparent;
+}
+.test{
+  color:red;
+}
+
+.ChatBox{
+  width:100%;
+  height:15%;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+.ChatBox textarea{
+  width:79%;
+  position:absolute;
+  right:3%;
+  height:100%;
+  bottom:15%;
+  padding:0,0,0,0;
+  resize:none;
+  font-size:15px;
+  font-family:'';
+  color:black;
+}
+
+.sidebar button{
+  color:rgb(207,195,207);
+  background:transparent;
+  border:none;
+  font-size:1.5vw;
+  width:100%;
+  text-align:left;
+  padding-top:3%;
+  border-top: none;
+}
+.sidebar button:hover{
+  cursor: pointer;
+}
+
+.ChatBox button{
+  position:absolute;
+  bottom:15%;
+  right:0%;
+  height:102%;
+  border:none;
+  background-color:black;
+  color:white;
+}
+.mc{
+  width:80%;
+  position:absolute;
+  right:2%;
+  height:70%;
+  top:0;
+  
+}
+#messages{
+  position:absolute;
+  width:100%;
+  max-height:100%;
+  overflow-y: auto;
+
+}

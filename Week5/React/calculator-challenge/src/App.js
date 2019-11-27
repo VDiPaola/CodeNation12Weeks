@@ -112,21 +112,27 @@ function addKey(e){
     document.getElementById("output").innerHTML = "";
   }
 
-  if(document.getElementById("output").innerHTML == code){
-    let question = prompt("find m: 39m+674=153m−90070 and then encrypt the answer with haval128,3 hash encryption and answer that in the prompt to unlock pugs")
-    if(question == "046dbb671f5d730a419a12abe03b387b"){
-      pugTheme();
-    }else{
-      alert("wrong, cats are better")
-    }
+
     
-  }else if(key=="="){
-    try{
+  if(key=="="){
+
+    if(document.getElementById("output").innerHTML == code){
+      let question = prompt("find m: 39m+674=153m−90070 and then encrypt the answer with haval128,3 hash encryption and answer that in the prompt to unlock pugs")
+      if(question == "046dbb671f5d730a419a12abe03b387b"){
+        pugTheme();
+      }else{
+        alert("wrong, cats are better")
+      }
+    }else{
+      try{
         document.getElementById("output").innerHTML = math.evaluate(document.getElementById("output").innerHTML)
     }catch(err){
       console.log(err)
       alert("cannot calculate this")
     }
+    }
+
+
 
   }else if(key=="CE"){
     document.getElementById("output").innerHTML = "0";
@@ -136,8 +142,8 @@ function addKey(e){
 
   if(pugthemeEnabled){
     //play sound
-    let sound = new Audio('pug.mp3');
-    sound.play();
+    // let sound = new Audio('pug.mp3');
+    // sound.play();
   }
 }
 
