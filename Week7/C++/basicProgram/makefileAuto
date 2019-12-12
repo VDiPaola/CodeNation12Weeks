@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+cd /Users/enzo/Desktop/Weeks/Week7/C++/basicProgram/
+sudo make cleanall
+sudo make
+./Program

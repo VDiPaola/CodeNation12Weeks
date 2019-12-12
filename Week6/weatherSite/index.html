@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+        <h3> enter a city, to be more specific you can also enter a country code </h3>
+        <input class="input" id="cityInput" placeholder="City e.g. london"></input>
+        <input class="input" id="countryInput" placeholder="Country code e.g. uk"></input>
+        <button id="submitButton">Submit</button>
+        <br>
+        <input id="metric" class="radio" type="radio" name="system" value="metric" checked>Metric<br>
+        <input class="radio" type="radio" name="system" value="imperial">Imperial<br>
+    
+
+    <h1>Weather stats at <span id="location"></span></h1>
+
+    <div id="stats">
+        <p>Temperature: <span id="temperature"></span></p>
+        <p>Pressure: <span id="pressure"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Max Temperature: <span id="maxtemp"></span></p>
+        <p>Min Temperature: <span id="mintemp"></span></p>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
