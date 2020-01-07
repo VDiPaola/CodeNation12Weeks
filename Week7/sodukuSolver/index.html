@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src='index.js'></script>
+    <link rel="stylesheet" href="main.css">
+    <title>soduku</title>
+</head>
+<body> 
+    <p>Select a difficulty:</p>
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+        <option value="random">Random</option>
+    </select>
+    <button onClick='generateSudoku()'>GENERATE</button>
+    <button onClick='solveSudoku()'>SOLVE</button>
+    <button onClick='empty()'>EMPTY</button>
+
+    <div id="sudukuContainer">
+
+    </div>
+
+</body>
+
+</html>

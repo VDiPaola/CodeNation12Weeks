@@ -1,0 +1,27 @@
+
+#sodukuContainer{
+    width: 100vw;
+    height: 50vh;
+    background-color: red;
+}
+.sodukuBox{
+    width: 33%;
+    height: 33%;
+    background-color: rgb(194, 194, 194);
+    float: left;
+}
+.sodukuBox p{
+    width: 33%;
+    height: 33%;
+    float: left;
+}
+
+.sodukuBox:nth-child(2n){
+    background-color: rgb(163, 163, 163);
+}
+input{
+    background-color: aliceblue;
+    text-align: center;
+    width:100%;
+
+}
