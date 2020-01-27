@@ -36,10 +36,11 @@ app.get('/users', (req,res)=>{
 app.get('/users/add', (req,res)=>{
     //sets parameters for query
     const {user, pass} = req.query;
+    console.log('test')
     //query to search for user to see if it already exists
-    const FIND_USER = `SELECT * FROM users WHERE name='${user}'`;
+    const FIND_USER = `SELECT * FROM users WHERE lower(name)='${user.toLowerCase()}'`;
     //creates variable for query to insert user
-    const INSERT_USER = `INSERT INTO users(name, password,email,friends,chats) VALUES('${user}', '${pass}', '', '','"example":{"message":[""]}')`;
+    const INSERT_USER = `INSERT INTO users(name, password,email,friends,chats,profilepic) VALUES('${user}', '${pass}', '', '','"example":{"message":[""]}','')`;
 
     //find user
     connection.query(FIND_USER, (err, results)=>{
@@ -67,7 +68,7 @@ app.get('/users/add', (req,res)=>{
 app.get('/users/verifylogin', (req,res) => {
     const {user, pass} = req.query
     //query to see if user exists
-    const FIND_USER = `SELECT * FROM userpass WHERE username="${user}"`;
+    const FIND_USER = `SELECT * FROM users WHERE lower(name)="${user.toLowerCase()}"`;
     connection.query(FIND_USER,(err,results) => {
         if(err){return console.log(err)}else{
             if(results[0]){
@@ -76,7 +77,7 @@ app.get('/users/verifylogin', (req,res) => {
                     return res.send("true"); 
                 }
                 //returns rightuser if user matches but password doesnt
-                return res.send("rightuser"); 
+                return res.json({data:"rightuser"})
                 
             }
             //returns false if no user is found
@@ -86,6 +87,21 @@ app.get('/users/verifylogin', (req,res) => {
     })
 })
 
+//change specific field
+app.get('/users/changefield', (req,res) => {
+    const {field, data,user} = req.query
+    console.log(field)
+    console.log(data)
+    console.log(user)
+    //query to see if user exists
+    const UPDATE_FIELD = `UPDATE users SET ${field}='${data}' WHERE name='${user}'`;
+    connection.query(UPDATE_FIELD,(err,results) => {
+        if(err){return console.log(err)}else{
+            return res.send('true')
+        }
+
+    })
+})
 
 //get value from specific field of a user
 app.get('/users/getfield', (req,res)=>{
@@ -114,6 +130,7 @@ app.get('/forums', (req,res)=>{
 
 //add forum post
 app.get('/forums/createpost', (req,res) => {
+    console.log("CREATING A POST")
     const {user, contents, topic,date,title} = req.query;
     //query to add to db
 

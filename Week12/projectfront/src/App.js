@@ -35,7 +35,7 @@ class Forums extends Component{
       forumItems: [],
       forumPage: 0,
       forumTitle: 'Forums',
-      forumTopics: ["Topic1", "Topic2", "Topic3", "Topic4"],
+      forumTopics: ["Anxiety", "Depression", "Bipolar", "Body Dismorphia"],
       forumViewIndex: -1,
       username: 'default',
       loggedIn: true,

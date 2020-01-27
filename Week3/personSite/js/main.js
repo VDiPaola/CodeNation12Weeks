@@ -3,6 +3,10 @@ document.getElementById("img1").addEventListener("click", function(){
     window.location = "https://github.com/VDiPaola";
 });
 
+document.getElementById("img2").addEventListener("click", function(){
+    window.location = "https://www.linkedin.com/in/vincenzodipaoladeveloper/";
+});
+
 let buttons = document.getElementById("links").children;
 
 for(i=0;i<buttons.length;i++){
@@ -77,3 +81,19 @@ document.getElementById("name").addEventListener("mouseout", function(){
 //         }, seconds * 1000);
 //     });
 // }
+
+
+
+//links
+document.getElementById('link1').addEventListener('click', function(){
+    window.location.pathname = 'projects.html'
+})
+document.getElementById('link2').addEventListener('click', function(){
+    window.location.pathname = 'cv.html'
+})
+document.getElementById('link3').addEventListener('click', function(){
+    window.location.pathname = 'contact.html'
+})
+document.getElementById('link4').addEventListener('click', function(){
+    window.location.pathname = 'aboutme.html'
+})
